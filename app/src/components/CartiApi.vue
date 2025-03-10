@@ -1,6 +1,8 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<template>
+  <div></div>
+</template>
 
+<script>
 const URL = 'https://data.cityofnewyork.us/resource/t7p9-n9dy.json?$limit=1000'
 async function getData(URL) {
   try {
@@ -11,10 +13,12 @@ async function getData(URL) {
     console.error('Error fetching data:', error)
   }
 }
+
+export default {
+  setup() {
+    return {}
+  },
+}
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-  </main>
-</template>
+<style scoped></style>
