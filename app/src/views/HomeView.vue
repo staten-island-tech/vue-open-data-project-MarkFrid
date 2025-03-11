@@ -16,5 +16,6 @@ async function getData(URL) {
 <template>
   <main>
     <TheWelcome />
+    <CartiApi />
   </main>
 </template>
