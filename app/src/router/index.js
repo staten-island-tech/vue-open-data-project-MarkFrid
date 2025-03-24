@@ -10,6 +10,16 @@ const router = createRouter({
       name: 'FlintAndSteel',
       component: FlintAndSteel,
     },
+    {
+      path: '/enderpearl',
+      name: 'enderpearl',
+      component: () => import('../views/EnderPearlChart.vue'),
+    },
+    {
+      path: '/IAmSteve',
+      name: 'IAmSteve',
+      component: () => import('../views/IAmSteveChart.vue'),
+    },
   ],
 })
 
